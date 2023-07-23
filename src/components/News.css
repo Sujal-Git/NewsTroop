@@ -1,0 +1,25 @@
+:root{
+    --primary:rgb(21, 21, 21);
+    --secondary:rgb(32, 32, 32);
+    --theme:rgb(255, 43, 43);
+    --font1:rgb(225, 225, 225);
+    --font2:rgb(195, 195, 195);
+  }
+.main{
+    border-radius: 10px;
+    width: 260px;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--secondary);
+}
+h5{
+    color: var(--font2);
+}
+.main h3{
+    font-size: 25px;
+    color: var(--font1);
+}
+.main p{
+    color: var(--font2);
+}
