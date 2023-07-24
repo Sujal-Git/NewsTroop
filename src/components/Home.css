@@ -12,3 +12,8 @@ h1{
     text-align: center;
     color: var(--theme);
 }
+.news-container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
