@@ -2,6 +2,7 @@ import React from 'react'
 import './News.css'
 
 export default function News() {
+  
   return (
       <>
       <div className="main">
@@ -11,3 +12,5 @@ export default function News() {
       </>
   )
 }
+
+// a5af9b32319a49d487b845235138babd
