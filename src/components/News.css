@@ -9,7 +9,7 @@
     border-radius: 10px;
     width: 320px;
     height: auto;
-    padding: 10px;
+    padding: 14px;
     margin: 20px;
     background-color: var(--secondary);
 }
@@ -17,11 +17,14 @@ h5{
     color: var(--font2);
 }
 .main h3{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3px;
     text-align: center;
     font-size: 25px;
-    color: var(--font1);
+    color: white;
 }
 .main p{
+    margin-top: 5px;
     text-align: center;
     color: var(--font2);
 }
@@ -29,6 +32,6 @@ h5{
     margin: auto;
     align-items: center;
     width: 300px;
-    height: 250px;
+    height: 200px;
     border-radius: 10px;
 }
