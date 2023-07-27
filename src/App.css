@@ -5,8 +5,8 @@
   --font1:rgb(225, 225, 225);
   --font2:rgb(195, 195, 195);
 }
-body{
-  overflow-x: hidden;
+::-webkit-scrollbar{
+  display: none;
 }
 *{
   margin: 0;
