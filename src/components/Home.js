@@ -1314,7 +1314,7 @@ export default function Home() {
    
     return(
         <>
-        {console.log(getData())}
+        {console.log(getData)}
         <h1>News</h1>
         <div className="news-container">
         <News imglink="https://i.blogs.es/947ce0/vpn/840_560.jpeg" title="England Qualifies For CWC 2019" description="England have successfully qualified for CWC 2019 after beating zimbawe by 8 wickets."   />
