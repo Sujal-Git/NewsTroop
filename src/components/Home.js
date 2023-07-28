@@ -1306,15 +1306,18 @@ export default function Home() {
   //       }
   //     ]
     async function getData(){
-      const response =await fetch('https://newsapi.org/v2/everything?q=software&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd')
-      return await response.json()
+      const response =await fetch('https://newsapi.org/v2/everything?&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd')
+      const result=await response.json()
+      return result.articles
+
     }
     const [data, setData] = useState('')
-    
+
+
    
     return(
         <>
-        {console.log(getData)}
+        {console.log(getData())}
         <h1>News</h1>
         <div className="news-container">
         <News imglink="https://i.blogs.es/947ce0/vpn/840_560.jpeg" title="England Qualifies For CWC 2019" description="England have successfully qualified for CWC 2019 after beating zimbawe by 8 wickets."   />
