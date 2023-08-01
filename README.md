@@ -1,3 +1,3 @@
-# React News App
+# NewsTroop
 ## A news app built in reactJs for reading daily news.
-### Status: Development
+### Status: Development (38% Completed)
