@@ -183,7 +183,7 @@ export default function Home() {
         {/* mapping the articles and rendering it in news component */}
        {data.map((key)=>{
         return (
-      <News key={key.title}   title={key.title} imglink={key.urlToImage} description={key.description}/>
+      <News key={key.title}   title={key.title} imglink={key.urlToImage} description={key.description.slice(0,80)+"...."}/>
         )
        })}
       </div>
