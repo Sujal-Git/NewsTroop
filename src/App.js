@@ -1,7 +1,9 @@
 import './App.css';
-import {Link,Routes,Route} from 'react-router-dom'
+import {Link,Routes,Route, json} from 'react-router-dom'
 import About from './components/About';
 import Home from './components/Home';
+
+
 function App() {
   return (
    <>
