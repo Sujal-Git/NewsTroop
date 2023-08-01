@@ -4,6 +4,7 @@
   --theme:rgb(255, 43, 43);
   --font1:rgb(225, 225, 225);
   --font2:rgb(195, 195, 195);
+  
 }
 ::-webkit-scrollbar{
   display: none;
