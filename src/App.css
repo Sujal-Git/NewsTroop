@@ -12,6 +12,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  overflow-x: hidden;
+}
 .nav{
   background-color: var(--primary);
   width: 100vw;
