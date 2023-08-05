@@ -10,7 +10,7 @@ export default function Home() {
   //useeffect to fetching the api and setting the usestate
   useEffect(() => {
     const getData = async () => {
-      let response = await fetch(`https://newsapi.org/v2/everything?q=trending&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd&page=${page}`)
+      let response = await fetch(`https://newsapi.org/v2/everything?q=trending&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd&page=${page}&pageSize=30`)
       let result = await response.json()
       setData(result.articles)
     }
@@ -20,20 +20,22 @@ export default function Home() {
 
   //methods for updating page content with previous and next
   const setPrevious=async()=>{
-      let response = await fetch(`https://newsapi.org/v2/everything?q=trending&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd&page=${page-1}`)
+      let response = await fetch(`https://newsapi.org/v2/everything?q=trending&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd&page=${page-1}&pageSize=30`)
       let result = await response.json()
       setPage(page-1)
       setData(result.articles)
     
   }
   const setNext=async()=>{
-      let response = await fetch(`https://newsapi.org/v2/everything?q=trending&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd&page=${+page+1}`)
+      let response = await fetch(`https://newsapi.org/v2/everything?q=trending&from=2023-07-23&sortBy=popularity&apiKey=a5af9b32319a49d487b845235138babd&page=${+page+1}&pageSize=30`)
       let result = await response.json()
       setPage(page+1)
       setData(result.articles)
       
   }
+  const setDisplay=()=>{
 
+  }
 
   return (
     <>
@@ -48,7 +50,7 @@ export default function Home() {
       </div>
       <div className="buttonset">
         <button onClick={setPrevious}>Previous</button>
-        <button onClick={setNext}>Next</button>
+        <button onLoad={setDisplay} onClick={setNext}>Next</button>
       </div>
 
     </>
